@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, .nav-links, .btn-cta{
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: hsl(238, 22%, 44%);
+    font-size: 17px;
+}
+
+header{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+nav{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding-left: 40px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero img{
+    width: 600px;
+}
+
+h1{
+    color: hsl(243, 87%, 12%);
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+p{
+    color: hsl(238, 22%, 44%);
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+
+input{
+    width: 300px;
+    padding: 15px;
+    margin-right: 10px;
+    color: hsl(238, 22%, 44%);
+    border: 1px solid hsl(238, 22%, 44%);
+    outline-width: 0;
+}
+
+.btn-cta{
+    color: #fff;
+    background: hsl(224, 93%, 58%);
+    border-radius: 5px;
+    padding: 16px;
+    width: 200px;
+    border: none;
+}
+
+.btn-cta:hover{
+    opacity: 0.7;
+}
+
+.productive{
+    background: url(./images/bg-curve-desktop.svg) top / cover no-repeat;
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.productive p{
+    max-width: 450px;
+    font-size: 0.9em;
+}
+
+.productive img{
+    width: 500px;
+}
+
+.productive a{
+    color: hsl(170, 45%, 43%);
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+}
+
+.productive a:hover{
+    opacity: 0.7;
+}
+
+.card{
+    margin-top: 30px;
+    width: 50%;
+    padding: 50px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 4px rgba(109, 102, 102, 0.4);
+    background-image: url(./images/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: top 30px left 20px;
+}
+.card img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h6{
+    color: hsl(243, 87%, 12%);
+}
+
+.profile-details{
+    padding-top: 15px;
+}
+
+.profile-details p{
+    font-size: 0.6em;
+}
+
+.sign-up{
+    background: hsl(238, 22%, 44%);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+    padding: 80px 60px;
+    align-items: center;
+}
+
+.sign-up h2{
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.sign-up p{
+    color: #fff;
+    font-size: 1em;
+}
+
+.sign-up input{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.sign-up .btn-cta{
+    border-radius: 0;
+    background: hsl(224, 76%, 54%);
+}
+
+footer{
+    background: hsl(243, 87%, 12%);
+    padding: 60px 60px;
+}
+
+footer .container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details p{
+    color: #fff;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.links ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.links ul li a:hover{
+    color: hsl(238, 22%, 44%);
+}
+
+.socials img{
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+}
+
+.socials div{
+    border: 1px solid #fff;
+    padding: 10px;
+    display: inline;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.socials div:hover{
+    color: hsl(238, 22%, 44%);
+}
+
+@media(max-width: 680px){
+
+    nav img{
+        width: 100px;
+    }
+
+    nav ul li{
+        padding-left: 20px;
+    }
+
+    .hero{
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .hero img{
+        order: 1;
+        width: 100%;
+    }
+
+    .hero div{
+       order: 2; 
+       text-align: center;
+    }
+
+    .hero h1{
+        font-size: 2em;
+    }
+
+    input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .btn-cta{
+        width: 100%;
+    }
+
+    .productive{
+        background: url(./images/bg-curve-desktop.svg) top / cover no-repeat;
+        grid-template-columns: 1fr;
+    }
+
+    .productive img{
+        order: 1;
+        width: 100%;
+    }
+
+    .productive>div{
+        order: 2;
+    }
+
+    .productive h1, .sign-up h2{
+        text-align: center;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .productive a{
+        margin: 10px 50px;
+    }
+
+    .card{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .card img{
+        width: 30px;
+        order: 1;
+    }
+
+    .profile-details{
+        order: 2;
+    }
+
+    .sign-up{
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .sign-up p{
+        font-size: 0.9em;
+    }
+     
+    footer .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .socials{
+        align-self: center;
+    }
+}
